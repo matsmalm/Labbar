@@ -1,8 +1,4 @@
-/**
- * Trieeeeeee!
- * @author shaz
- *
- */
+
 public class Trie {
 
 	long address;
@@ -21,8 +17,7 @@ public class Trie {
 		}
 	}
 	/**
-	 * endast fï¿½r test
-	 * @param args
+	 * Test
 	 */
 	public static void main(String[] args){		
 	Trie test = new Trie(3);
@@ -32,13 +27,8 @@ public class Trie {
 	
 	}
 	/**
-	 * setAddress sï¿½tter adressen pï¿½ plats [first second third] till "address" parametern :))))))))
+	 * setAddress sŠtter adressen pŒ plats [first second third] till adress-parametern.
 	 * 
-	 * @param trie Trie'n som man vill ï¿½ndra adressen pï¿½
-	 * @param first fï¿½rsta bokstaven
-	 * @param second andra 
-	 * @param third trï¿½ï¿½dje
-	 * @param address ï¿½djeszen som man vill kjamaz med
 	 */
 	public void setAddress(Trie trie, int first, int second, int third, int address){
 		trie.children[first].children[second].children[third].address = address;
@@ -51,13 +41,7 @@ public class Trie {
 	}
 
 	/**
-	 * getAddress metoderna returnerar en address, den fï¿½rsta returnerar 3 nivï¿½er ner,
-	 * den andra tvï¿½, den tredje en..
-	 * @param trie Trie'n som man vill fï¿½ addressen ur
-	 * @param first fï¿½rsta bokstaven
-	 * @param second andra bokstaven
-	 * @param third tredje bokstaven
-	 * @return address
+	 * getAddress metoderna returnerar en address
 	 */
 	public long getAddress(Trie trie, int first, int second, int third){
 		return trie.children[first].children[second].children[third].address;
